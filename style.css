@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca',sans-serif;
+    background: hsl(0, 0%, 95%);
+}
+
+main {
+    margin: 2rem;
+    color: hsl(0, 0%, 95%);
+}
+
+main div:nth-child(1){
+    background: hsl(31, 77%, 52%);
+    border-radius: 10px 10px  0 0;
+}
+
+main div:nth-child(2) {
+    background: hsl(184, 100%, 22%);
+}
+
+main div:nth-child(3) {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+}
+
+main div {
+    padding: 3rem;
+}
+
+main div h1 {
+    text-transform: uppercase;
+    padding: 1.3rem 0;
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+
+main div p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+main div:nth-child(1) button {
+    color: hsl(31, 77%, 52%);
+}
+
+main div:nth-child(2) button {
+    color: hsl(184, 100%, 22%);
+}
+
+main div:nth-child(3) button {
+    color: hsl(179, 100%, 13%);
+}
+
+main div button {
+    background-color: hsl(0, 0%, 95%);
+    padding: 12px 25px;
+    font-weight: 700;
+    border-radius: 50px;
+    border: 1px solid hsl(0, 0%, 95%);
+    outline: none;
+    cursor: pointer;
+}
+
+main div:nth-child(1) button:hover {
+    color: hsl(0, 0%, 95%);
+    background: hsl(31, 77%, 52%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+main div:nth-child(2) button:hover {
+    color: hsl(0, 0%, 95%);
+    background: hsl(184, 100%, 22%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+main div:nth-child(3) button:hover {
+    color: hsl(0, 0%, 95%);
+    background: hsl(179, 100%, 13%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        margin: 0 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main div:nth-child(1){
+        border-radius: 10px 0 0 10px;
+    }
+
+    main div:nth-child(3){
+        border-radius: 0px 10px 10px 0;
+    }
+
+    main div p {
+        margin: 1rem 0 5rem 0;
+    }
+}
